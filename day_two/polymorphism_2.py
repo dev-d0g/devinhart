@@ -11,7 +11,6 @@ class Rectangle(Shape):
     width : float
     height : float
 
-    
     def __init__(self, _width: float, _height: float):
         self.width = _width
         self.height = _height
@@ -40,7 +39,6 @@ class Triangle(Shape):
         return self.base * self.height * 0.5
     
 shapes = [Rectangle(10, 5), Circle(7), Triangle(6, 4)]
-
 
 for shape in shapes:
         print(f"{shape.__class__.__name__} area: {shape.area()}")
